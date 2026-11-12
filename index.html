@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Expense Tracker</title>
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <header>
+            <h1>Daily Expense Tracker</h1>
+            <p>Manage your daily spending easily</p>
+        </header>
+
+
+        <section class="summary">
+
+            <div class="card">
+                <h3>Total Expenses</h3>
+                <h2>₹0.00</h2>
+            </div>
+
+            <div class="card">
+                <h3>Total Transactions</h3>
+                <h2>0</h2>
+            </div>
+
+            <div class="card">
+                <h3>Highest Expense</h3>
+                <h2>₹0.00</h2>
+            </div>
+
+        </section>
+
+
+        <section class="form-section">
+
+            <h2>Add New Expense</h2>
+
+            <form>
+
+                <label for="expenseName">Expense Name</label>
+                <input type="text" id="expenseName"
+                       placeholder="Enter expense name">
+
+                <label for="expenseCategory">Category</label>
+                <select id="expenseCategory">
+                    <option value="">Select Category</option>
+                    <option>Food</option>
+                    <option>Travel</option>
+                    <option>Shopping</option>
+                    <option>Education</option>
+                    <option>Bills</option>
+                    <option>Entertainment</option>
+                    <option>Other</option>
+                </select>
+
+                <label for="expenseAmount">Amount (₹)</label>
+                <input type="number" id="expenseAmount"
+                       placeholder="Enter amount">
+
+                <label for="expenseDate">Date</label>
+                <input type="date" id="expenseDate">
+
+                <button type="button">Add Expense</button>
+
+            </form>
+
+        </section>
+
+
+        <section class="history">
+
+            <h2>Expense History</h2>
+
+            <label for="categoryFilter">Filter by Category</label>
+
+            <select id="categoryFilter">
+                <option value="All">All Categories</option>
+                <option>Food</option>
+                <option>Travel</option>
+                <option>Shopping</option>
+                <option>Education</option>
+                <option>Bills</option>
+                <option>Entertainment</option>
+                <option>Other</option>
+            </select>
+
+            <div class="table-box">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Expense Name</th>
+                            <th>Category</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="expenseList">
+                        <tr>
+                            <td colspan="5" class="empty" id="emptyMessage">
+                                No expenses added yet.
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+
+        </section>
+
+
+        <section class="category-section">
+
+            <h2>Category-wise Expenses</h2>
+
+            <div class="category-item">
+                <div class="category-info">
+                    <span>Food</span>
+                    <span>₹0.00</span>
+                </div>
+                <div class="category-bar">
+                    <div class="category-fill"></div>
+                </div>
+            </div>
+
+            <div class="category-item">
+                <div class="category-info">
+                    <span>Travel</span>
+                    <span>₹0.00</span>
+                </div>
+                <div class="category-bar">
+                    <div class="category-fill"></div>
+                </div>
+            </div>
+
+            <div class="category-item">
+                <div class="category-info">
+                    <span>Shopping</span>
+                    <span>₹0.00</span>
+                </div>
+                <div class="category-bar">
+                    <div class="category-fill"></div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <p>Daily Expense Tracker | Mini Project</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
